@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Vite
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+
+# Storybook (when added)
+storybook-static/
+
+# Coverage (when added)
+coverage/
+
+# Chromatic (when added)
+build-storybook.log
