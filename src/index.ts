@@ -5,3 +5,7 @@ export const VERSION = '0.0.0' as const;
 
 /** Tailwind CSS preset with Digital Sanctum design tokens */
 export { default as tailwindPreset } from './styles/tailwind.preset';
+
+/** Components */
+export { Button, buttonVariants } from './components/Button';
+export type { ButtonProps } from './components/Button';
