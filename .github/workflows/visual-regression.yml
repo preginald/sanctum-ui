@@ -1,0 +1,27 @@
+name: Visual Regression
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci --legacy-peer-deps
+
+      # TODO Phase 3: Uncomment when Storybook and Chromatic are configured
+      # - uses: chromaui/action@latest
+      #   with:
+      #     projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+
+      - run: echo "Visual regression stub — activate in Phase 3 with Storybook + Chromatic"
