@@ -23,7 +23,6 @@ jobs:
 
       - run: npm run lint
 
-      # TODO: Replace with `npm test -- --run` once vitest is configured (ticket #1676)
-      - run: echo "Tests not yet configured — activate when vitest is added"
+      - run: npm run test:run
 
       - run: npm run build
