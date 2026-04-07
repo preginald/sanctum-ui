@@ -2,3 +2,6 @@
 
 /** Library version placeholder */
 export const VERSION = '0.0.0' as const;
+
+/** Tailwind CSS preset with Digital Sanctum design tokens */
+export { default as tailwindPreset } from './styles/tailwind.preset';

@@ -87,6 +87,48 @@ If all three commands pass, your environment is correctly configured.
 
 Package not yet published -- coming in Phase 4.
 
+## Consumer Setup
+
+Once the package is installed, extend your Tailwind CSS configuration with the
+Sanctum UI design token preset:
+
+```ts
+// tailwind.config.ts
+import type { Config } from 'tailwindcss';
+import { tailwindPreset } from '@digital-sanctum/sanctum-ui';
+
+const config: Config = {
+  content: ['./src/**/*.{ts,tsx}'],
+  presets: [tailwindPreset as Config],
+  theme: {
+    extend: {
+      // Your app-specific overrides here
+    },
+  },
+  plugins: [],
+};
+
+export default config;
+```
+
+Then import the Inter font stylesheet in your application entry point:
+
+```css
+/* src/index.css or src/App.css */
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+```
+
+The preset provides:
+
+- **Colours:** `primary`, `secondary`, `success`, `warning`, `error`, `info`, `neutral` palettes
+- **Typography:** Inter font family with system-ui fallback
+- **Border radius:** Semantic scale (`sm` through `2xl`)
+- **Box shadow:** Semantic scale (`sm` through `xl`)
+- **Z-index:** Semantic layers (`dropdown`, `sticky`, `fixed`, `modal`, `toast`, `tooltip`)
+
 ## Contributing
 
 See the project board for active tickets.
