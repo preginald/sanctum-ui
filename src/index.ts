@@ -31,5 +31,8 @@ export type { ModalProps } from './components/Modal';
 export { Select, selectVariants } from './components/Select';
 export type { SelectProps } from './components/Select';
 
+export { Tabs, tabsListVariants, tabVariants } from './components/Tabs';
+export type { TabsProps } from './components/Tabs';
+
 export { ErrorBoundary } from './components/ErrorBoundary';
 export type { ErrorBoundaryProps } from './components/ErrorBoundary';
