@@ -59,6 +59,7 @@
     "autoprefixer": "^10.0.0",
     "axe-core": "^4.11.2",
     "eslint": "^9.0.0",
+    "globals": "^14.0.0",
     "eslint-plugin-jsx-a11y": "^6.0.0",
     "eslint-plugin-react-hooks": "^4.0.0",
     "jsdom": "^29.0.2",
