@@ -21,3 +21,6 @@ export type { CardProps } from './components/Card';
 
 export { Alert, alertVariants } from './components/Alert';
 export type { AlertProps } from './components/Alert';
+
+export { Toast, toastVariants, ToastProvider, useToast } from './components/Toast';
+export type { ToastProps } from './components/Toast';
