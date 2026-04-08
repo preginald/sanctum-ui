@@ -9,3 +9,6 @@ export { default as tailwindPreset } from './styles/tailwind.preset';
 /** Components */
 export { Button, buttonVariants } from './components/Button';
 export type { ButtonProps } from './components/Button';
+
+export { Input, inputVariants } from './components/Input';
+export type { InputProps } from './components/Input';
