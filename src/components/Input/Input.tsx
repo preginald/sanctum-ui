@@ -9,7 +9,7 @@ const inputVariants = cva(
   {
     variants: {
       state: {
-        idle: 'border-neutral-300 bg-white text-neutral-900 placeholder:text-neutral-400',
+        idle: 'border-neutral-300 bg-white text-neutral-900 placeholder:text-neutral-500',
         error:
           'border-error-500 bg-error-50 text-neutral-900 focus-visible:ring-error-500',
         success:

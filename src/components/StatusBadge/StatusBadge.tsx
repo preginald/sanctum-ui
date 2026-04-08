@@ -12,7 +12,7 @@ const statusBadgeVariants = cva(
         error: 'bg-error-50 text-error-700',
         info: 'bg-info-50 text-info-700',
         pending: 'bg-neutral-100 text-neutral-600',
-        neutral: 'bg-neutral-100 text-neutral-500',
+        neutral: 'bg-neutral-100 text-neutral-600',
       },
       size: {
         sm: 'px-2 py-0.5 text-xs',

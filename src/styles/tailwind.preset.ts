@@ -44,6 +44,8 @@ const preset: Partial<Config> = {
           50: '#fef2f2',
           500: '#ef4444',
           700: '#b91c1c',
+          800: '#991b1b',
+          900: '#7f1d1d',
         },
         info: {
           50: '#eff6ff',
