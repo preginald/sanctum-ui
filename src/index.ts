@@ -18,3 +18,6 @@ export type { StatusBadgeProps } from './components/StatusBadge';
 
 export { Card, cardVariants } from './components/Card';
 export type { CardProps } from './components/Card';
+
+export { Alert, alertVariants } from './components/Alert';
+export type { AlertProps } from './components/Alert';
