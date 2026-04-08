@@ -24,3 +24,6 @@ export type { AlertProps } from './components/Alert';
 
 export { Toast, toastVariants, ToastProvider, useToast } from './components/Toast';
 export type { ToastProps } from './components/Toast';
+
+export { ErrorBoundary } from './components/ErrorBoundary';
+export type { ErrorBoundaryProps } from './components/ErrorBoundary';
