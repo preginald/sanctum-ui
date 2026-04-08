@@ -177,7 +177,7 @@ SelectGroup.displayName = 'SelectGroup'
 /* ------------------------------------------------------------------ */
 
 export interface SelectProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'value' | 'onChange'>,
+  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'value' | 'onChange' | 'defaultValue'>,
     VariantProps<typeof selectVariants> {
   /** Controlled value */
   value?: string | null
@@ -238,7 +238,7 @@ const SelectRoot = React.forwardRef<HTMLButtonElement, SelectProps>(
     const triggerRef = React.useRef<HTMLButtonElement | null>(null)
     const listboxRef = React.useRef<HTMLDivElement | null>(null)
     const typeaheadRef = React.useRef('')
-    const typeaheadTimerRef = React.useRef<ReturnType<typeof setTimeout>>()
+    const typeaheadTimerRef = React.useRef<ReturnType<typeof setTimeout>>(undefined)
 
     const isControlled = controlledValue !== undefined
     const selectedValue = isControlled ? (controlledValue ?? null) : internalValue
