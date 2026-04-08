@@ -12,3 +12,6 @@ export type { ButtonProps } from './components/Button';
 
 export { Input, inputVariants } from './components/Input';
 export type { InputProps } from './components/Input';
+
+export { StatusBadge, statusBadgeVariants } from './components/StatusBadge';
+export type { StatusBadgeProps } from './components/StatusBadge';
