@@ -3,12 +3,14 @@ import tseslint from '@typescript-eslint/eslint-plugin';
 import tsparser from '@typescript-eslint/parser';
 import reactHooks from 'eslint-plugin-react-hooks';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+import globals from 'globals';
 
 export default [
   js.configs.recommended,
   {
     files: ['src/**/*.{ts,tsx}'],
     languageOptions: {
+      globals: globals.browser,
       parser: tsparser,
       parserOptions: {
         ecmaVersion: 'latest',
