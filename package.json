@@ -1,5 +1,5 @@
 {
-  "name": "@digital-sanctum/sanctum-ui",
+  "name": "@preginald/sanctum-ui",
   "version": "0.0.0",
   "description": "Shared React component library for the Digital Sanctum platform",
   "type": "module",
@@ -7,6 +7,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/preginald/sanctum-ui.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "main": "./dist/sanctum-ui.cjs.js",
   "module": "./dist/sanctum-ui.es.js",
