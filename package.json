@@ -6,19 +6,24 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/preginald/sanctum-ui.git"
+    "url": "git+https://github.com/preginald/sanctum-ui.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "main": "./dist/sanctum-ui.cjs.js",
-  "module": "./dist/sanctum-ui.es.js",
+  "main": "./dist/sanctum-ui.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/sanctum-ui.es.js",
-      "require": "./dist/sanctum-ui.cjs.js",
-      "types": "./dist/index.d.ts"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/sanctum-ui.cjs"
+      }
     }
   },
   "files": [
@@ -27,7 +32,7 @@
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && cp dist/index.d.ts dist/index.d.cts",
     "preview": "vite preview",
     "lint": "eslint src",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",

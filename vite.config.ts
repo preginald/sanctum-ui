@@ -13,16 +13,27 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'SanctumUI',
       formats: ['es', 'cjs'],
-      fileName: (format) => `sanctum-ui.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
-      output: {
-        globals: {
-          react: 'React',
-          'react-dom': 'ReactDOM',
+      output: [
+        {
+          format: 'es',
+          preserveModules: true,
+          preserveModulesRoot: 'src',
+          entryFileNames: '[name].js',
+          dir: resolve(__dirname, 'dist'),
         },
-      },
+        {
+          format: 'cjs',
+          entryFileNames: 'sanctum-ui.cjs',
+          dir: resolve(__dirname, 'dist'),
+          globals: {
+            react: 'React',
+            'react-dom': 'ReactDOM',
+          },
+        },
+      ],
     },
   },
   resolve: {
