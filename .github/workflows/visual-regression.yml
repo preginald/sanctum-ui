@@ -9,6 +9,8 @@ on:
 jobs:
   chromatic:
     runs-on: ubuntu-latest
+    env:
+      CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,11 +24,9 @@ jobs:
       - run: npm ci --legacy-peer-deps
 
       - name: Run Chromatic
-        if: ${{ secrets.CHROMATIC_PROJECT_TOKEN != '' }}
+        if: env.CHROMATIC_PROJECT_TOKEN != ''
         run: npx chromatic --exit-zero-on-changes
-        env:
-          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
       - name: Skip Chromatic (no token)
-        if: ${{ secrets.CHROMATIC_PROJECT_TOKEN == '' }}
+        if: env.CHROMATIC_PROJECT_TOKEN == ''
         run: echo "CHROMATIC_PROJECT_TOKEN not configured — skipping visual regression"
