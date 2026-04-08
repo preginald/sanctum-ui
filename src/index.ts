@@ -28,5 +28,8 @@ export type { ToastProps } from './components/Toast';
 export { Modal, modalVariants } from './components/Modal';
 export type { ModalProps } from './components/Modal';
 
+export { Select, selectVariants } from './components/Select';
+export type { SelectProps } from './components/Select';
+
 export { ErrorBoundary } from './components/ErrorBoundary';
 export type { ErrorBoundaryProps } from './components/ErrorBoundary';
