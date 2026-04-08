@@ -55,6 +55,8 @@ const preset: Partial<Config> = {
         surface: {
           low: '#131b2e',
           high: '#2d3449',
+          'light-low': '#f8fafc',
+          'light-high': '#f1f5f9',
         },
         neutral: {
           50: '#f9fafb',
