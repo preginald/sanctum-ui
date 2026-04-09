@@ -39,3 +39,12 @@ export type { TabsProps } from './components/Tabs';
 
 export { ErrorBoundary } from './components/ErrorBoundary';
 export type { ErrorBoundaryProps } from './components/ErrorBoundary';
+
+export { AuthLoginCard } from './components/AuthLoginCard';
+export type { AuthLoginCardProps } from './components/AuthLoginCard';
+
+export { AuthBrandingPanel } from './components/AuthBrandingPanel';
+export type { AuthBrandingPanelProps } from './components/AuthBrandingPanel';
+
+export { AuthPageLayout } from './components/AuthPageLayout';
+export type { AuthPageLayoutProps } from './components/AuthPageLayout';
