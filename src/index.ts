@@ -48,3 +48,51 @@ export type { AuthBrandingPanelProps } from './components/AuthBrandingPanel';
 
 export { AuthPageLayout } from './components/AuthPageLayout';
 export type { AuthPageLayoutProps } from './components/AuthPageLayout';
+
+/** CMS Layout Components */
+export { NavItem, navItemVariants } from './components/NavItem';
+export type { NavItemProps } from './components/NavItem';
+
+export { NavGroup } from './components/NavGroup';
+export type { NavGroupProps } from './components/NavGroup';
+
+export { Sidebar, sidebarVariants } from './components/Sidebar';
+export type { SidebarProps } from './components/Sidebar';
+
+export { SearchInput, searchInputVariants } from './components/SearchInput';
+export type { SearchInputProps } from './components/SearchInput';
+
+export { PageHeader } from './components/PageHeader';
+export type { PageHeaderProps, BreadcrumbItem } from './components/PageHeader';
+
+export { AppShell } from './components/AppShell';
+export type { AppShellProps } from './components/AppShell';
+
+/** CMS Data Display Components */
+export { StatCard, statCardVariants } from './components/StatCard';
+export type { StatCardProps, TrendDirection } from './components/StatCard';
+
+export { DataPanel, dataPanelVariants } from './components/DataPanel';
+export type { DataPanelProps, DataPanelItem } from './components/DataPanel';
+
+export { ArticleCard, articleCardVariants } from './components/ArticleCard';
+export type { ArticleCardProps } from './components/ArticleCard';
+
+export { ProgressBar, progressBarVariants } from './components/ProgressBar';
+export type { ProgressBarProps } from './components/ProgressBar';
+
+export { HealthScore, healthScoreVariants } from './components/HealthScore';
+export type { HealthScoreProps } from './components/HealthScore';
+
+/** CMS Interactive Components */
+export { KanbanCard, kanbanCardVariants } from './components/KanbanCard';
+export type { KanbanCardProps } from './components/KanbanCard';
+
+export { KanbanColumn } from './components/KanbanColumn';
+export type { KanbanColumnProps } from './components/KanbanColumn';
+
+export { KanbanBoard } from './components/KanbanBoard';
+export type { KanbanBoardProps } from './components/KanbanBoard';
+
+export { MarkdownPreview, markdownPreviewVariants } from './components/MarkdownPreview';
+export type { MarkdownPreviewProps } from './components/MarkdownPreview';
